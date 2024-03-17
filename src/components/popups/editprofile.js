@@ -110,7 +110,7 @@ profileFormData.append("ProfilePicture", selectedImage)
 // Assuming you have the accessToken available
 const accessToken = JSON.parse(token);
    if(selectedImage){
- const imageResponse = await axios.post(`${process.env.API_URL}/api/user/update-profile_pic?api-version=1.0`, profileFormData,{ headers: {
+ const imageResponse = await axios.post(`https://104.251.223.167:7500/api/user/update-profile_pic?api-version=1.0`, profileFormData,{ headers: {
     Authorization: `Bearer ${accessToken}`
   }});
 // const ress = await fetch(`/api/register/updateprofile/`, {
